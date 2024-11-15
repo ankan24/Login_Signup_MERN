@@ -16,7 +16,8 @@ function Signup() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post("http://localhost:3000/signup", form, {
+          //  const response = await axios.post("http://localhost:3000/signup", form, {
+          const response = await axios.post("https://login-signup-backend-zw2k.onrender.com/signup", form, {
                 headers: {
                     'Content-Type': 'application/json',
                 },
