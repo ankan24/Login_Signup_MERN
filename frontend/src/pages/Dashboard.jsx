@@ -15,16 +15,16 @@ function Dashboard() {
     }, []);
 
     return (
-        <div className="flex items-center justify-center min-h-screen bg-gray-100">
+        <div className="flex items-center justify-center min-h-screen bg-red-50">
             <div className="p-6 space-y-6 bg-white rounded-lg shadow-lg">
-                <h1 className="text-3xl font-bold text-center text-blue-600">Dashboard</h1>
+                <h1 className="text-3xl font-bold text-center text-red-600">Dashboard</h1>
                 {userDetails ? (
                     <div>
-                        <h2 className="text-xl">Welcome, {userDetails.name}</h2>
-                        <p>Email: {userDetails.email}</p>
+                        <h2 className="text-xl text-red-800">Welcome, {userDetails.name}</h2>
+                        <p className="text-red-700">Email: {userDetails.email}</p>
                     </div>
                 ) : (
-                    <p>Loading dashboard...</p>
+                    <p className="text-red-500">Loading dashboard...</p>
                 )}
             </div>
         </div>
