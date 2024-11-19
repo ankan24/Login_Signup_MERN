@@ -19,7 +19,7 @@ function Login() {
             pswd : password
         })
         if(response.data.success){
-            window.location.href = "https://ankan-ghorai.onrender.com/";
+            window.location.href = "https://shop-sphere-xc2b.onrender.com/";
             navigate('/dashboard')
         }else{
             alert("Invalid Credentials")
