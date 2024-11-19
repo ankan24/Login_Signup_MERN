@@ -5,7 +5,8 @@ function Dashboard() {
     const [userDetails, setUserDetails] = useState(null);
 
     useEffect(() => {
-        axios.get("http://localhost:3000/dashboard")
+        //axios.get("http://localhost:3000/dashboard")
+       axios.get("https://login-signup-backend-zw2k.onrender.com/dashboard")
             .then(response => {
                 setUserDetails(response.data.userDetails);
             })
