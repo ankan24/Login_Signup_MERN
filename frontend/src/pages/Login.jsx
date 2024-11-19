@@ -9,7 +9,6 @@ function Login() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-<<<<<<< HEAD
         const response = await axios.post("http://localhost:3000/login", {
             mail: email,
             pswd: password,
@@ -19,18 +18,6 @@ function Login() {
             navigate('/dashboard');
         } else {
             alert("Invalid Credentials");
-=======
-       // const response = await axios.post("http://localhost:3000/login",{
- const response = await axios.post("https://login-signup-backend-zw2k.onrender.com/login",{
-            mail : email,
-            pswd : password
-        })
-        if(response.data.success){
-            window.location.href = "https://shop-sphere-xc2b.onrender.com/";
-            navigate('/dashboard')
-        }else{
-            alert("Invalid Credentials")
->>>>>>> 26f7d87704862be94992c3305771731b3ec76090
         }
     };
 
@@ -74,8 +61,4 @@ function Login() {
     );
 }
 
-<<<<<<< HEAD
 export default Login;
-=======
-export default Login
->>>>>>> 26f7d87704862be94992c3305771731b3ec76090
