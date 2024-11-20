@@ -6,7 +6,8 @@ function Dashboard() {
 
     useEffect(() => {
         //axios.get("http://localhost:3000/dashboard")
-       axios.get("https://login-signup-backend-zw2k.onrender.com/dashboard")
+     //  axios.get("https://login-signup-backend-zw2k.onrender.com/dashboard")
+          axios.get("shop-sphere-login.vercel.app/dashboard")
             .then(response => {
                 setUserDetails(response.data.userDetails);
             })
